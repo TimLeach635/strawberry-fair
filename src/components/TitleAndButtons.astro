@@ -1,0 +1,21 @@
+---
+type Props = {
+  title?: string;
+  subtitle?: string;
+}
+
+const { title, subtitle } = Astro.props;
+---
+
+<div class="container">
+  <div class="columns">
+    <div class="column">
+      {title ? <p class="title">{title}</p> : <></>}
+      {subtitle ? <p class="subtitle">{subtitle}</p> : <></>}
+    </div>
+    <div class="column">
+      <a class="button is-secondary" href="/about/get-involved">Get Involved</a>
+      <a class="button is-primary" href="/about/apply-to-trade">Apply To Trade</a>
+    </div>
+  </div>
+</div>
