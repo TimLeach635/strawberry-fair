@@ -1,25 +1,26 @@
 ---
 import HeaderLink from './HeaderLink.astro';
-import { SITE_TITLE } from '../../consts';
 ---
 
 <header>
-	<h2>
-		{SITE_TITLE}
-	</h2>
-	<nav>
-		<HeaderLink href="/">Home</HeaderLink>
-		<HeaderLink href="/blog">Blog</HeaderLink>
-		<HeaderLink href="/about">About</HeaderLink>
-		<HeaderLink href="https://twitter.com/astrodotbuild" target="_blank">Twitter</HeaderLink>
-		<HeaderLink href="https://github.com/withastro/astro" target="_blank">GitHub</HeaderLink>
+	<nav class="navbar" role="navigation" aria-label="main navigation">
+		<div class="navbar-brand">
+			<a class="navbar-item" href="/">
+				<img src="/images/1-line-logo.png">
+			</a>
+		</div>
+		<div class="navbar-menu">
+			<div class="navbar-end">
+				<HeaderLink href="/">Home</HeaderLink>
+				<HeaderLink href="/blog">Blog</HeaderLink>
+				<HeaderLink href="/about">About</HeaderLink>
+				<HeaderLink href="https://twitter.com/astrodotbuild" target="_blank">Twitter</HeaderLink>
+				<HeaderLink href="https://github.com/withastro/astro" target="_blank">GitHub</HeaderLink>
+			</div>
+		</div>
 	</nav>
 </header>
-<style>
-	header {
-		margin: 0em 0 2em;
-	}
-	h2 {
-		margin: 0.5em 0;
-	}
+<style lang="scss">
+	@import "bulma/sass/utilities/_all.sass";
+	@import "bulma/sass/components/navbar.sass";
 </style>
