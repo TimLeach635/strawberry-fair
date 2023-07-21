@@ -13,6 +13,24 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 	<body>
 		<Header title={SITE_TITLE} />
 		<main>
+			<section class="hero is-medium">
+				<img class="hero-background" src="/images/Hidef_east_stage_oagns6.jpg" alt="The crowd viewed from a stage at Strawberry Fair" />
+				<div class="hero-body">
+				</div>
+				<style>
+					.hero {
+						position: relative;
+						overflow: hidden;
+					}
+					img.hero-background {
+						position: absolute;
+						object-fit: cover;
+						object-position: center center;
+						width: 100%;
+						height: 100%;
+					}
+				</style>
+			</section>
 			<h1>🧑‍🚀 Hello, Astronaut!</h1>
 			<p>
 				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This
