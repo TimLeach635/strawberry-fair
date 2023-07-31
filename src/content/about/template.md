@@ -16,11 +16,7 @@ strawberryTiles:
       text: >-
             multa quoque et bellō passūs, dum conderet urbem, inferretque deōs Latiō,
             genus unde Latīnum.
-heroData:
-  heroImages:
-    - alt: East stage panorama
-      src: >-
-        https://res.cloudinary.com/strawberryfair/image/upload/v1578398228/Banner/revised-east-stage-panorama_zfwxj4.jpg
-  isActive: true
+heroImage: https://res.cloudinary.com/strawberryfair/image/upload/v1578398228/Banner/revised-east-stage-panorama_zfwxj4.jpg
+heroImageDescription: East stage panorama
 ---
 

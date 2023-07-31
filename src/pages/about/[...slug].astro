@@ -1,21 +1,34 @@
 ---
 import { CollectionEntry, getCollection } from "astro:content";
-import BlogPost from "../../layouts/BlogPost.astro";
+import BaseHead from "../../components/BaseHead.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../../consts";
+import Hero from "../../components/Hero.astro";
+import Header from "../../components/header/Header.astro";
 
 export async function getStaticPaths() {
-	const posts = await getCollection("about");
-	return posts.map((post) => ({
-		params: { slug: post.slug },
-		props: post,
+	const aboutPages = await getCollection("about");
+	return aboutPages.map((page) => ({
+		params: { slug: page.slug },
+		props: page,
 	}));
 }
 type Props = CollectionEntry<"about">;
 
-const post = Astro.props;
-const { Content } = await post.render();
+const aboutPage = Astro.props;
+const { Content } = await aboutPage.render();
 ---
 
-<BlogPost {...post.data}>
-	<h1>{post.data.title}</h1>
-	<Content />
-</BlogPost>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header title={SITE_TITLE} />
+		{aboutPage.data.heroImage !== undefined && <Hero imageUrl={aboutPage.data.heroImage} imageAlt={aboutPage.data.heroImageDescription ?? "Strawberry Fair hero image"} />}
+		<h1 class="title">{aboutPage.data.title}</h1>
+		<main class="content">
+			<Content />
+		</main>
+	</body>
+</html>

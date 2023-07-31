@@ -1,12 +1,8 @@
 ---
 templateKey: about-page
 title: Shady Nasty Stage
-heroData:
-  heroImages:
-    - alt: Shady Nasty Area
-      src: >-
-        https://res.cloudinary.com/strawberryfair/image/upload/v1652611793/Shady_Nasty_jq3nsw.jpg
-  isActive: true
+heroImage: https://res.cloudinary.com/strawberryfair/image/upload/v1652611793/Shady_Nasty_jq3nsw.jpg
+heroImageDescription: Shady Nasty Area
 strawberryTiles:
   - strawberryTile:
       isPublic: false

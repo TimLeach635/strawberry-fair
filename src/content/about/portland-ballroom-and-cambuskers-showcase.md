@@ -1,12 +1,8 @@
 ---
 templateKey: about-page
 title: Portland Ballroom and Cambuskers Showcase
-heroData:
-  heroImages:
-    - alt: Banner
-      src: >-
-        https://res.cloudinary.com/strawberryfair/image/upload/v1653003059/Decorations_y1mvmx.jpg
-  isActive: true
+heroImage: https://res.cloudinary.com/strawberryfair/image/upload/v1653003059/Decorations_y1mvmx.jpg
+heroImageDescription: Banner
 strawberryTiles:
   - strawberryTile:
       isPublic: false

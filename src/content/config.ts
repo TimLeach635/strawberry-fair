@@ -5,6 +5,7 @@ const about = defineCollection({
 		title: z.string(),
 		subtitle: z.string().optional(),
 		heroImage: z.string().optional(),
+		heroImageDescription: z.string().optional(),
 	}),
 });
 

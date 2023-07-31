@@ -2,12 +2,8 @@
 templateKey: about-page
 title: About the Fair
 subtitle: What makes Strawberry Fair special?
-heroData:
-  heroImages:
-    - alt: Crowd
-      src: >-
-        https://res.cloudinary.com/strawberryfair/image/upload/v1578398228/Banner/slide-crowd_jnl1lw.jpg
-  isActive: true
+heroImage: https://res.cloudinary.com/strawberryfair/image/upload/v1578398228/Banner/slide-crowd_jnl1lw.jpg
+heroImageDescription: Crowd
 strawberryTiles:
   - strawberryTile:
       isPublic: false

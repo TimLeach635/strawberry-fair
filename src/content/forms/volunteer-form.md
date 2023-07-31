@@ -2,12 +2,8 @@
 templateKey: form
 title: Volunteer Form
 subtitle: Tell us a bit about yourself and how you'd like to get involved
-heroData:
-  heroImages:
-    - alt: Bunting
-      src: >-
-        https://res.cloudinary.com/strawberryfair/image/upload/v1580041739/Banner/bunting_unwt07.jpg
-  isActive: true
+heroImage: https://res.cloudinary.com/strawberryfair/image/upload/v1580041739/Banner/bunting_unwt07.jpg
+heroImageDescription: Bunting
 form:
   isPublic: true
   link: >-
